@@ -32,7 +32,7 @@ const drawgame = () => {
     setTimeout(() => {
         drawSound.pause();
         drawSound.src = drawSound.src;
-    }, 1000);
+    }, 1500);
 }
 let userchoice;
 
@@ -91,6 +91,7 @@ else{
     showwinner(userwins, userchoice, compchoice); 
 }
 };
+
 
 
 
