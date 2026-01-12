@@ -50,7 +50,7 @@ const showwinner = (userwins, userchoice, compchoice) => {
     setTimeout(() => {
         winSound.pause();
         winSound.src = winSound.src;
-    }, 1500);
+    }, 1000);
     }
     else{
     move.innerText= `Computer wins! Your ${userchoice} loses to Computer's ${compchoice}`;
@@ -91,6 +91,7 @@ else{
     showwinner(userwins, userchoice, compchoice); 
 }
 };
+
 
 
 
