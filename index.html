@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock! Papers! Scissors!</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<h1>Laksh's (Rock Paper Scissors)</h1>
+
+<div class="game-container">
+
+    <!-- CHOICES -->
+    <div id="choices">
+        <div class="choices" id="rock">
+            <img src="rock.png" alt="Rock">
+        </div>
+        <div class="choices" id="paper">
+            <img src="paper.png" alt="Paper">
+        </div>
+        <div class="choices" id="scissors">
+            <img src="scissors.jpg" alt="Scissors">
+        </div>
+    </div>
+
+    <!-- SCORES -->
+    <div id="scores">
+        <div class="userscore">
+            <span class="user">0</span><br>You
+        </div>
+        <div class="compscore">
+            <span class="comp">0</span><br>PC 
+        </div>
+    </div>
+
+    <!-- RESULT -->
+    <div class="move">
+        Make your move!
+    </div>
+
+</div>
+<audio id="win-sound" src="hum-jeet-gaye-made-with-Voicemod.mp3"></audio>
+<audio id="loose-sound" src="Ruko-Jara.mp3"></audio>
+<audio id="draw-sound" src="Technologiya.mp3"></audio>
+
+<script src="index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    /* https://grabient.com/HQDgrAzANMBsCcB2KBGYAGMsoFp3BXjBhXXRIgCZd8xEQbhKAWaPYK5d9CYjZrvkKUgA?angle=180 */
+
+background: linear-gradient(180deg, #a9caff 0.000%, #b8cbff 16.667%, #d3cbff 33.333%, #f0c8f9 50.000%, #ffc5f1 66.667%, #ffc0ec 83.333%, #ffbaec 100.000%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+h1{
+    width: 100%;
+    background: rgb(4,6,121);
+    color: gold;
+    text-align: center;
+    padding: 12px;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-family :fantasy;
+}
+
+/* Game wrapper */
+.game-container{
+    width: 100%;
+    max-width: 1200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* R P S in one line */
+#choices{
+    display: flex;
+    justify-content: center;
+    gap: clamp(20px, 6vw, 70px);
+}
+
+/* Button size */
+#rock img,
+#paper img,
+#scissors img{
+    width: clamp(80px, 18vw, 150px);
+    height: auto;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Scores below */
+#scores{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.userscore,
+.compscore{
+    font-size: clamp(2rem, 5vw, 4rem);
+    padding: 10px 20px;
+ 
+    color: black;
+    
+    
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    font-weight: bold;
+}
+
+/* Result box center */
+.move{
+    color: gold;
+    background-color: rgb(6, 8, 68);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    text-align: center;
+    max-width: 90%;
+    font-weight: bold;
+}
+.move:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
